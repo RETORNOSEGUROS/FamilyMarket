@@ -89,22 +89,22 @@ export default function DashboardPage() {
 
             {/* Desktop Menu */}
             <nav className="hidden md:flex items-center gap-6">
-              <a href="#" className="text-gray-600 hover:text-primary-500 flex items-center gap-2">
+              <Link href="/dashboard" className="text-gray-600 hover:text-primary-500 flex items-center gap-2">
                 <Home className="w-5 h-5" />
                 Início
-              </a>
-              <a href="#" className="text-gray-600 hover:text-primary-500 flex items-center gap-2">
+              </Link>
+              <Link href="/estoque" className="text-gray-600 hover:text-primary-500 flex items-center gap-2">
                 <Package className="w-5 h-5" />
                 Estoque
-              </a>
-              <a href="#" className="text-gray-600 hover:text-primary-500 flex items-center gap-2">
+              </Link>
+              <Link href="/listas" className="text-gray-600 hover:text-primary-500 flex items-center gap-2">
                 <List className="w-5 h-5" />
                 Listas
-              </a>
-              <a href="#" className="text-gray-600 hover:text-primary-500 flex items-center gap-2">
+              </Link>
+              <Link href="/gastos" className="text-gray-600 hover:text-primary-500 flex items-center gap-2">
                 <BarChart3 className="w-5 h-5" />
                 Gastos
-              </a>
+              </Link>
             </nav>
 
             {/* User Menu */}
@@ -147,22 +147,22 @@ export default function DashboardPage() {
           {/* Mobile Menu */}
           {menuOpen && (
             <nav className="md:hidden mt-4 pb-4 space-y-2">
-              <a href="#" className="block px-4 py-2 text-gray-600 hover:bg-gray-50 rounded-lg">
+              <Link href="/dashboard" className="block px-4 py-2 text-gray-600 hover:bg-gray-50 rounded-lg">
                 <Home className="w-5 h-5 inline mr-2" />
                 Início
-              </a>
-              <a href="#" className="block px-4 py-2 text-gray-600 hover:bg-gray-50 rounded-lg">
+              </Link>
+              <Link href="/estoque" className="block px-4 py-2 text-gray-600 hover:bg-gray-50 rounded-lg">
                 <Package className="w-5 h-5 inline mr-2" />
                 Estoque
-              </a>
-              <a href="#" className="block px-4 py-2 text-gray-600 hover:bg-gray-50 rounded-lg">
+              </Link>
+              <Link href="/listas" className="block px-4 py-2 text-gray-600 hover:bg-gray-50 rounded-lg">
                 <List className="w-5 h-5 inline mr-2" />
                 Listas
-              </a>
-              <a href="#" className="block px-4 py-2 text-gray-600 hover:bg-gray-50 rounded-lg">
+              </Link>
+              <Link href="/gastos" className="block px-4 py-2 text-gray-600 hover:bg-gray-50 rounded-lg">
                 <BarChart3 className="w-5 h-5 inline mr-2" />
                 Gastos
-              </a>
+              </Link>
               <button
                 onClick={handleLogout}
                 className="w-full text-left px-4 py-2 text-red-600 hover:bg-red-50 rounded-lg"
